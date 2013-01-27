@@ -1,7 +1,7 @@
-var ip = document.getElementById('ip').value;
+var server = 'IP:PORT';
 
-define(["http://" + ip + ":1337/socket.io/socket.io.js"], function() {
-	var socket = io.connect('http://' + ip + ':1337');
+define(["http://" + server + "/socket.io/socket.io.js"], function() {
+	var socket = io.connect('http://' + server);
 
 	return socket;
 });
